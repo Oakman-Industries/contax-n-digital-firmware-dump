@@ -1,0 +1,38 @@
+Copyright (c) 2026 Oakman Industries
+
+This work — the software in this repository together with the research, findings, file-format
+documentation and methods it embodies — is licensed under the
+
+    Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+    (CC BY-NC-SA 4.0)
+
+You are free to:
+  * Share  — copy and redistribute the material in any medium or format.
+  * Adapt  — remix, transform, and build upon the material.
+
+Under the following terms:
+  * Attribution (BY)   — You must give appropriate credit to Oakman Industries, provide a link
+                         to this license, and indicate if changes were made.
+  * NonCommercial (NC) — You may NOT use the material, or anything built from it, for commercial
+                         purposes.
+  * ShareAlike (SA)    — If you remix, transform, or build upon the material — INCLUDING your own
+                         research and findings derived from it — you must distribute your
+                         contributions under this same CC BY-NC-SA 4.0 license, openly.
+  * No additional restrictions — You may not apply legal terms or technological measures that
+                         legally restrict others from doing anything the license permits.
+
+The full legal code is at: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+A human-readable summary is at: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+NOTE: CC BY-NC-SA 4.0 is a copyleft, non-commercial license. Because of the NonCommercial clause
+it is intentionally NOT an OSI-approved "open source" license; it is chosen deliberately so that
+derivatives must stay open and non-commercial.
+
+SCOPE: This license covers only Oakman Industries' own work in this repository. It does NOT cover
+the original Contax N Digital firmware files listed in NOTICE (firmware/stock-1.08/CXBRFIRM.BIN and
+cf-card/D_CONTAX/100CXBOX/CXBRFIRM.BIN). That firmware is copyright Kyocera Corporation, which
+retains all rights to it; see NOTICE.
+
+DISCLAIMER: The material is provided "as-is", without warranties of any kind. Installing modified
+firmware can permanently damage the camera; you do so entirely at your own risk. Use it only with
+hardware you own.

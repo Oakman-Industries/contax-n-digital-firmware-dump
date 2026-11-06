@@ -1,0 +1,36 @@
+# Oakman Industries default .gitignore — extend per project.
+
+# --- Private per-device / user data (NEVER commit) ---
+*.RAW
+*.raw
+*.BIN
+*.bin
+*.iso
+*_dump/
+dumps/
+captures/
+NDDUMP*
+*.RUN
+*.EXE
+*.exe
+*.sit
+/D_contax/
+/D_CONTAX/
+
+# --- Binaries this repo DOES ship on purpose (see NOTICE for the firmware files) ---
+!firmware/nd_lastresort.bin
+!firmware/stock-1.08/
+!firmware/stock-1.08/CXBRFIRM.BIN
+!cf-card/
+!cf-card/**
+
+# --- Build / OS / editor ---
+build/
+dist/
+*.o
+*.elf
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

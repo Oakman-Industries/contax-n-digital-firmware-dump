@@ -1,0 +1,44 @@
+name: Share a dump
+description: Share an NDDUMP.BIN from your Contax N Digital for preservation (by link, not attachment).
+title: "Dump: <firmware version before install>, <date>"
+labels: ["dump"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for preserving your camera! Please **do not attach the dump file here**. Host it wherever you like
+        (cloud drive, archive) and paste a link below. A dump contains your camera's settings, its date/time and a log
+        of recent image file names; only share what you're comfortable with. Serial numbers are optional.
+  - type: input
+    id: fw_before
+    attributes:
+      label: Firmware version shown by the camera BEFORE installing NDDUMP
+      placeholder: "e.g. 1.08 (camera menu → VERSION)"
+    validations:
+      required: true
+  - type: textarea
+    id: hashes
+    attributes:
+      label: SHA-256 of each NDDUMP.BIN
+      description: "`shasum -a 256 NDDUMP*.BIN`"
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Check output (README Step 5)
+      description: "`xxd -l 16`, `tail -c 12 | xxd`, and the `cmp -n 720912` result between two dumps"
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: link
+    attributes:
+      label: Download link (optional)
+      placeholder: "https://…"
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything notable
+      description: What the screen showed, how long the dump took, settings you changed between dumps, camera condition, serial (optional)…

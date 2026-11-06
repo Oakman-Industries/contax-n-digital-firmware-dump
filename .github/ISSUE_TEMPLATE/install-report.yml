@@ -1,0 +1,45 @@
+name: Install report
+description: Report how installing NDDUMP went — success OR failure. Both matter.
+title: "Install: <success/failure>, from firmware <version>"
+labels: ["install-report"]
+body:
+  - type: dropdown
+    id: outcome
+    attributes:
+      label: Outcome
+      options:
+        - Success — camera works normally and dumps work
+        - Partial — installed, but dumps don't work
+        - Failure — camera no longer starts / bricked
+        - Other (describe below)
+    validations:
+      required: true
+  - type: input
+    id: fw_before
+    attributes:
+      label: Firmware version before install
+      placeholder: "e.g. 1.07 or 1.08"
+    validations:
+      required: true
+  - type: input
+    id: patched_hash
+    attributes:
+      label: SHA-256 of the CXBRFIRM.BIN you flashed
+      placeholder: "should be c8deab4c8822fbf050b885b9c1422619b73920058177e9a1b88f4d23e63f211d"
+    validations:
+      required: true
+  - type: dropdown
+    id: power
+    attributes:
+      label: Power during install
+      options:
+        - Battery + AC adapter
+        - Battery only
+        - AC adapter only
+  - type: textarea
+    id: details
+    attributes:
+      label: What happened
+      description: Steps, on-screen messages (photos welcome), timings, CF card make/size.
+    validations:
+      required: true
