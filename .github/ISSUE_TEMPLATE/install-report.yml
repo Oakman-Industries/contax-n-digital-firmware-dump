@@ -9,9 +9,20 @@ body:
       label: Outcome
       options:
         - Success — camera works normally and dumps work
+        - Went back to stock with the update menu (v2)
         - Partial — installed, but dumps don't work
         - Failure — camera no longer starts / bricked
         - Other (describe below)
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: NDDUMP version installed
+      options:
+        - v2 (sha256 43eefee0…)
+        - v1 (sha256 c8deab4c…) — the old version that can't be removed from the menu
+        - Not sure
     validations:
       required: true
   - type: input
@@ -25,7 +36,7 @@ body:
     id: patched_hash
     attributes:
       label: SHA-256 of the CXBRFIRM.BIN you flashed
-      placeholder: "should be c8deab4c8822fbf050b885b9c1422619b73920058177e9a1b88f4d23e63f211d"
+      placeholder: "v2 should be 43eefee09a3ec052a16dd40a192d85360121351c4834aaedb43002770a75347f"
     validations:
       required: true
   - type: dropdown

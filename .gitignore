@@ -18,11 +18,10 @@ NDDUMP*
 /D_CONTAX/
 
 # --- Binaries this repo DOES ship on purpose (see NOTICE for the firmware files) ---
-!firmware/nd_lastresort.bin
+!firmware/nd_dump_reversible.bin
+!firmware/legacy-v1/nd_lastresort.bin
 !firmware/stock-1.08/
 !firmware/stock-1.08/CXBRFIRM.BIN
-!cf-card/
-!cf-card/**
 
 # --- Build / OS / editor ---
 build/

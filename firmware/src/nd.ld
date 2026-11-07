@@ -1,10 +1,10 @@
 /* Copyright (c) 2026 Oakman Industries. Licensed under CC BY-NC-SA 4.0
  *
  * nd.ld — link the NDDUMP code at its fixed runtime address inside the stock image: VA 0x800A2DC8, which is file
- * offset 0xA2EB0 of the 1.08 CXBRFIRM.BIN (an unused all-zero region). The gate must be first (.text.entry).
+ * offset 0xA2EB0 of the 1.08 CXBRFIRM.BIN (an unused all-zero region). The gate must be first (.text.entry);
+ * build.sh sets the ELF entry symbol per target.
  * Position-fixed, not PIC; no writable data allowed. */
 OUTPUT_ARCH(mips)
-ENTRY(nd_lastresort_gate)
 CAVE_VA = DEFINED(CAVE_VA) ? CAVE_VA : 0x800A2DC8;
 SECTIONS
 {

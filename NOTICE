@@ -1,9 +1,8 @@
 NOTICE — third-party firmware in this repository
 
-The following files contain the original Contax N Digital camera firmware, version 1.08:
+The following file contains the original Contax N Digital camera firmware, version 1.08:
 
   firmware/stock-1.08/CXBRFIRM.BIN            the original, unmodified 1.08 firmware file
-  cf-card/D_CONTAX/100CXBOX/CXBRFIRM.BIN      the same firmware with the NDDUMP patch applied
 
 The original firmware is copyright Kyocera Corporation. Kyocera Corporation retains all rights
 to it. It is included here solely so that owners of this long-discontinued camera can back up and preserve their own cameras. It is NOT
@@ -12,8 +11,9 @@ Oakman Industries claims no ownership of it and is not affiliated with or endors
 Corporation.
 
 Only Oakman Industries' own additions are covered by the CC BY-NC-SA 4.0 license in LICENSE:
-the NDDUMP code (firmware/src/, firmware/nd_lastresort.bin), the patch (firmware/nddump-fw108.ips),
-and the documentation.
+the NDDUMP code (firmware/src/, firmware/nd_dump_reversible.bin, firmware/legacy-v1/), the patch
+(firmware/nddump-v2-fw108.ips, which holds only the NDDUMP code and two redirected call instructions),
+the tools (tools/), and the documentation.
 
 "Contax" and "Kyocera" are trademarks of their respective owners and are used here only to
 identify the hardware this project works with.

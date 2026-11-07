@@ -6,9 +6,10 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for preserving your camera! Please **do not attach the dump file here**. Host it wherever you like
-        (cloud drive, archive) and paste a link below. A dump contains your camera's settings, its date/time and a log
-        of recent image file names; only share what you're comfortable with. Serial numbers are optional.
+        Thank you for preserving your camera! Please share **v2 dumps only** (header `NDLRDMP2`): v1 dumps are mostly
+        RAM, not flash. Please **do not attach the dump file here**. Host it wherever you like (cloud drive, archive)
+        and paste a link below. A dump is a copy of your camera's flash, including whatever settings and per-camera
+        data it stores; only share what you're comfortable with. Serial numbers are optional.
   - type: input
     id: fw_before
     attributes:
@@ -28,7 +29,7 @@ body:
     id: checks
     attributes:
       label: Check output (README Step 5)
-      description: "`xxd -l 16`, `tail -c 12 | xxd`, and the `cmp -n 720912` result between two dumps"
+      description: "Output of `python3 tools/check_nddump.py NDDUMP*.BIN`"
       render: text
     validations:
       required: true

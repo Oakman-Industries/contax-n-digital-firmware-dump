@@ -1,10 +1,10 @@
-# Stock input (NOT included; supply your own): firmware 1.08 CXBRFIRM.BIN, 746540 bytes
-ea97198569531a8cf9d0e3f3e22c88b2e209e9dac3773daff33d1a698f635dfd  CXBRFIRM.BIN (stock 1.08)
-# NDDUMP firmware output (what you flash), 746540 bytes
-c8deab4c8822fbf050b885b9c1422619b73920058177e9a1b88f4d23e63f211d  CXBRFIRM.BIN (1.08 + NDDUMP)
-# Files in this folder
-350f8e77ec719655a165c396644124e9dd26f4d5f82fdb9ede0cc4df8eb0c938  nddump-fw108.ips
-602d0b61b280a97829bf031f3c17f2419165307b6710d78498853ce89cd00859  nd_lastresort.bin
-# Firmware files shipped in this repo (see NOTICE — © Kyocera Corporation, all rights reserved)
+# Stock input: firmware 1.08 CXBRFIRM.BIN, 746540 bytes (shipped as stock-1.08/CXBRFIRM.BIN, see NOTICE)
 ea97198569531a8cf9d0e3f3e22c88b2e209e9dac3773daff33d1a698f635dfd  stock-1.08/CXBRFIRM.BIN
-c8deab4c8822fbf050b885b9c1422619b73920058177e9a1b88f4d23e63f211d  ../cf-card/D_CONTAX/100CXBOX/CXBRFIRM.BIN
+# NDDUMP v2 firmware you build in README Step 1 (what you flash), 746540 bytes. Not shipped.
+43eefee09a3ec052a16dd40a192d85360121351c4834aaedb43002770a75347f  CXBRFIRM.BIN (1.08 + NDDUMP v2)
+# v2 files in this folder
+1648031470aeed9a3f3cb8fa9b74e037daa203706c53a7c2b335851313f17101  nddump-v2-fw108.ips
+e5d318842c8d8f686bb7325309a0802fef6cf1eac7629c81c9dff210e3b3bb5c  nd_dump_reversible.bin
+# v1 (DO NOT INSTALL; kept so v1 owners can identify what their camera runs)
+602d0b61b280a97829bf031f3c17f2419165307b6710d78498853ce89cd00859  legacy-v1/nd_lastresort.bin
+c8deab4c8822fbf050b885b9c1422619b73920058177e9a1b88f4d23e63f211d  CXBRFIRM.BIN (1.08 + NDDUMP v1). Not shipped.

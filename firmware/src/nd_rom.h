@@ -1,6 +1,6 @@
 /* Copyright (c) 2026 Oakman Industries. Licensed under CC BY-NC-SA 4.0
  *
- * nd_rom.h — the few Contax N Digital firmware entry points used by nd_lastresort.c.
+ * nd_rom.h — the few Contax N Digital firmware entry points used by the NDDUMP code.
  *
  * Addresses are runtime virtual addresses (KSEG0) of the camera's own file API, identical in firmware 1.07 and 1.08.
  * They are only valid when called from inside the running firmware (RTOS up, CF card mounted) — never from reset.
